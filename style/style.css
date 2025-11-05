@@ -1,0 +1,140 @@
+@font-face {
+	font-family: 'Century Gothic';
+	src: 
+			url('../fonts/century-gothic-regular.woff2') format('woff2'),
+			url('../fonts/century-gothic-regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Century Gothic';
+	src: 
+			url('../fonts/century-gothic-bold.woff2') format('woff2'),
+			url('../fonts/century-gothic-bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	min-width: 1440px;
+	width: 100%;
+	font-family: "Century Gothic", sans-serif;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	color: #ffffff;
+}
+
+.main-header {
+	width: 100%;
+	background-color: #961717;
+}
+
+.main-header-container {
+	width: 1360px;
+	margin: 0 auto;
+	padding: 40px 40px;
+	display: flex;
+	align-items: start;
+}
+
+.main-header-logo {
+	margin-right: 135px;
+}
+
+.main-header-nav {
+}
+
+.nav-list {
+	margin-right: 135px;
+	padding: 14px 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 26px;
+}
+
+.nav-item {
+}
+
+.nav-item-link {
+	font-size: 21px;
+	font-weight: 700;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.user-list {
+	display: none;
+}
+.user-item {
+}
+.user-item-button {
+}
+
+.main-header-button {
+	width: 210px;
+	padding: 12px 50px;
+	font-size: 21px;
+	font-weight: 700;
+	color: #ffffff;
+	border-radius: 30px;
+	border: 3px solid #ffffff;
+	background-color: rgba(0, 0, 0, 0);
+	cursor: pointer;
+}
+
+.hero {
+}
+
+.hero-info {
+}
+
+.hero-info-container {
+	width: 1360px;
+	padding: 60px 40px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 20px;
+}
+
+.hero-info-text-container {
+}
+
+.hero-info-title {
+	margin-bottom: 40px;
+	font-size: 64px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.hero-info-text {
+	width: 555px;
+	font-size: 22px;
+	font-weight: 400;
+	color: #000000;
+}
+
+.hero-info-img {
+	border-radius: 30px;
+}
+
+.hero-info-img-1 {
+	align-self: end;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+}
+
+.hero-info-img-2 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 3;
+}
+
+.hero-info-img-3 {
+}
+.hero-info-img-4 {
+}
