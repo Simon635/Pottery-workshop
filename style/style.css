@@ -29,6 +29,18 @@ body {
 	color: #ffffff;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+	border: 0;
+}
+
 .main-header {
 	width: 100%;
 	background-color: #961717;
@@ -134,7 +146,110 @@ body {
 	grid-row: 1 / 3;
 }
 
-.hero-info-img-3 {
+.subscription {
+	width: 1360px;
+	margin: 0 auto;
+	padding: 60px 40px;
 }
-.hero-info-img-4 {
+
+.subscription-swiper-container {
+	position: relative;
+}
+
+.subscription-title {
+	width: 670px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	font-size: 36px;
+	font-weight: 700;
+	text-align: center;
+	color: #961717;
+}
+
+.subscription-swiper {
+	width: 1130px;
+}
+
+.subscription-swiper-wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.subscription-swiper-slide {
+	height: 760px;
+	padding: 60px 115px;
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	box-sizing: border-box;
+	border-radius: 30px;
+	background-color: #961717;
+}
+
+.subscription-img {
+	width: 555px;
+	height: 648px;
+	padding: 20px;
+	display: flex;
+	box-sizing: border-box;
+	align-items: end;
+	justify-content: center;
+	background-image: url('../img/subscription-1.jpg');
+	background-size: 555px 648px;
+	background-repeat: no-repeat;
+	border-radius: 30px;
+}
+
+.subscription-button {
+	width: 210px;
+	padding: 11px 31px;
+	font-size: 23px;
+	font-weight: 700;
+	color: #ffffff;
+	border-radius: 30px;
+	border: none;
+	background-color: #961717;
+	cursor: pointer;
+}
+
+.subscription-text-container {
+	width: 325px;
+}
+
+.subscription-text-container h3 {
+	margin-bottom: 40px;
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.subscription-text-container p {
+	margin-bottom: 30px;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.subscription-text-container span {
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.subscription-container .subscription-swiper-button {
+	position: absolute; 
+	top: 50%;
+	width: 60px;
+	height: 60px;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	color: black;
+}
+
+.subscription-arrow-swiper {
+	transform: rotate(180deg);
+}
+
+.subscription-button-prev {
+}
+
+.subscription-button-next {
+	
 }
