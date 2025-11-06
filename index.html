@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style/normalize.css">
 	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="style/style.css">
 	<title>Document</title>
 </head>
@@ -60,14 +61,104 @@
 		<section class="subscription">
 			<div class="subscription-container">
 				<h2 class="subscription-title">Виды абонементов для детей</h2>
-				<div class="swiper">
-					<!-- Обёртка для слайдов -->
-					<div class="swiper-wrapper">
-						<!-- Слайды -->
-						<div class="swiper-slide"><img src="img/slide1.jpg" alt="Слайд 1"></div>
-						<div class="swiper-slide"><img src="img/slide2.jpg" alt="Слайд 2"></div>
-						<div class="swiper-slide"><img src="img/slide3.jpg" alt="Слайд 3"></div>
+				<div class="subscription-swiper-container">
+					<div class="subscription-swiper swiper">
+						<!-- Обёртка для слайдов -->
+						<div class="subscription-swiper-wrapper swiper-wrapper">
+							<!-- Слайды -->
+							<div class="subscription-swiper-slide swiper-slide">
+								<div class="subscription-img subscription-img-1">
+									<button class="subscription-button">Приобрести</button>
+								</div>
+								<div class="subscription-text-container">
+									<h3>№1 Первые шаги</h3>
+									<p>
+										<span>Длительность:</span>
+										4 занятия
+										(по 60 минут)
+									</p>
+									<p>
+										<span>Для кого:</span>
+										дети 7–9 лет
+									</p>
+									<p>Это вводный курс, который познакомит ребёнка
+										с гончарным делом
+										в игровой форме.
+										На занятиях дети учатся базовым приёмам лепки
+										из глины, создают простые, но яркие изделия. </p>
+								</div>
+							</div>
+							<div class="subscription-swiper-slide swiper-slide">
+								<div class="subscription-img subscription-img-2">
+									<button class="subscription-button">Приобрести</button>
+								</div>
+								<div class="subscription-text-container">
+									<h3>№2 Гончарный
+										мастер</h3>
+									<p>
+										<span>Длительность:</span>
+										8 занятий
+										(по 90 минут)
+									</p>
+									<p>
+										<span>Для кого:</span>
+										дети 8–12 лет
+									</p>
+									<p>Суть курса - углублённое знакомство с гончарными техниками. Дети осваивают работу на гончарном
+										круге, учатся создавать функциональную посуду (кружки, миски, вазочки), расписывают изделия. </p>
+								</div>
+							</div>
+							<div class="subscription-swiper-slide swiper-slide">
+								<div class="subscription-img subscription-img-3">
+									<button class="subscription-button">Приобрести</button>
+								</div>
+								<div class="subscription-text-container">
+									<h3>№ 3 Художник
+										по керамике</h3>
+									<p>
+										<span>Длительность:</span>
+										12 занятий
+										(по 120 минут)
+									</p>
+									<p>
+										<span>Для кого:</span>
+										дети 10–14 лет,
+										есть опыт работы с глиной
+									</p>
+									<p>Это курс с акцентом
+										на художественное оформление керамики. Дети учатся сложным техникам декорирования (рельеф, текстура,
+										многослойная роспись), создают персональные
+										арт-проекты. </p>
+								</div>
+							</div>
+						</div>
 					</div>
+					<!-- Стрелки навигации -->
+					<button class="subscription-swiper-button subscription-button-prev swiper-button-prev">
+						<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<mask id="mask0_4338_80" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60"
+								height="60">
+								<rect width="60" height="60" fill="currentColor" />
+							</mask>
+							<g mask="url(#mask0_4338_80)">
+								<path d="M25 55L0 30L25 5L29.4375 9.4375L8.875 30L29.4375 50.5625L25 55Z" fill="currentColor" />
+							</g>
+						</svg>
+						<span class="visually-hidden">Назад</span>
+					</button>
+					<button class="subscription-swiper-button subscription-button-next swiper-button-next">
+						<svg class="subscription-arrow-swiper" width="60" height="60" viewBox="0 0 60 60" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<mask id="mask0_4338_80" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60"
+								height="60">
+								<rect width="60" height="60" fill="currentColor" />
+							</mask>
+							<g mask="url(#mask0_4338_80)">
+								<path d="M25 55L0 30L25 5L29.4375 9.4375L8.875 30L29.4375 50.5625L25 55Z" fill="currentColor" />
+							</g>
+						</svg>
+						<span class="visually-hidden">Вперед</span>
+					</button>
 				</div>
 			</div>
 		</section>
@@ -75,6 +166,7 @@
 	<footer class="footer">
 
 	</footer>
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
 	<script type="module" src="js/main.js"></script>
 </body>
 
