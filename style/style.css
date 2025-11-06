@@ -194,10 +194,21 @@ body {
 	box-sizing: border-box;
 	align-items: end;
 	justify-content: center;
-	background-image: url('../img/subscription-1.jpg');
 	background-size: 555px 648px;
 	background-repeat: no-repeat;
 	border-radius: 30px;
+}
+
+.subscription-img-1 {
+	background-image: url('../img/subscription-1.jpg');
+}
+
+.subscription-img-2 {
+	background-image: url('../img/subscription-2.jpg');
+}
+
+.subscription-img-3 {
+	background-image: url('../img/subscription-3.jpg');
 }
 
 .subscription-button {
@@ -240,7 +251,8 @@ body {
 	height: 60px;
 	background-color: rgba(0, 0, 0, 0);
 	border: none;
-	color: black;
+	color: #961717;
+	;
 }
 
 .subscription-arrow-swiper {
