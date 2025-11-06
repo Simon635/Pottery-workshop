@@ -1,3 +1,4 @@
+import './toggle-faq.js'
 
 const swiper = new Swiper('.subscription-swiper', {
 	loop: true,
