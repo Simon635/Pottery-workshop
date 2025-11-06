@@ -343,7 +343,8 @@ body {
 }
 
 .faq-container {
-	width: 1360px;
+	width: 1130px;
+	margin: 0 auto;
 	padding: 60px 155px;
 }
 
