@@ -347,3 +347,22 @@ template {
 [hidden] {
   display: none;
 }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Убираем стрелки в Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input::placeholder,
+textarea::placeholder {
+	font-family: "Century Gothic";
+	font-size: 22px;
+	font-weight: 400;
+	color: rgba(68, 68, 68, 0.27);
+}
