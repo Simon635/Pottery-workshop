@@ -366,3 +366,7 @@ textarea::placeholder {
 	font-weight: 400;
 	color: rgba(68, 68, 68, 0.27);
 }
+
+html {
+  scroll-behavior: smooth;
+}
