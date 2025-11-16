@@ -4,8 +4,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style/normalize.css">
-	<link rel="stylesheet" href="style/reset.css">
 	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="style/style.css">
 	<title>Document</title>
@@ -322,38 +320,40 @@
 			<div class="form-container">
 				<form class="form" action="#">
 					<fieldset class="form-input-wrapper">
-						<fieldset class="form-input-container">
-							<label for="name">Ваше имя</label>
-							<input class="input input-name" type="text" name="name" id="name" placeholder="Введите имя">
-							<button class="input-delete-button" type="button">
-								<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z"
-										fill="currentColor" />
-								</svg>
-							</button>
-						</fieldset>
-						<fieldset class="form-input-container">
-							<label for="number">Телефон</label>
-							<input class="input input-number" type="number" name="number" id="number"
-								pattern="^(?:\+7|8)\s?\(?\d{3}\)?[\s-]?\d{3}[\s-]?\d{2}[\s-]?\d{2}$"
-								placeholder="+7 (___) ___ - __ - __">
-						</fieldset>
-						<fieldset class="form-input-container">
-							<label for="age">Возраст ребенка</label>
-							<input class="input input-age" type="number" name="age" id="age" placeholder="Введите число">
-						</fieldset>
-						<fieldset class="form-input-container">
-							<div class="subscription-dropdown">
-								<p class="subscription-dropdown-label">Вид абонемента</p>
-								<div class="subscription-dropdown-select" data-selected="">
-									<div class="subscription-dropdown-selected placeholder">Выберите абонемент</div>
-									<ul class="subscription-dropdown-list">
-										<li data-value="1">№1 Первые шаги</li>
-										<li data-value="2">№2 Гончарный мастер</li>
-										<li data-value="3">№3 Художник по керамике</li>
-									</ul>
+						<fieldset class="form-input-group-container">
+							<fieldset class="form-input-container form-input-container-name">
+								<label for="name">Ваше имя</label>
+								<input class="input input-name" type="text" name="name" id="name" placeholder="Введите имя">
+								<button class="input-delete-button" type="button">
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+							</fieldset>
+							<fieldset class="form-input-container form-input-container-number">
+								<label for="number">Телефон</label>
+								<input class="input input-number" type="number" name="number" id="number"
+									pattern="^(?:\+7|8)\s?\(?\d{3}\)?[\s-]?\d{3}[\s-]?\d{2}[\s-]?\d{2}$"
+									placeholder="+7 (___) ___ - __ - __">
+							</fieldset>
+							<fieldset class="form-input-container form-input-container-age">
+								<label for="age">Возраст ребенка</label>
+								<input class="input input-age" type="number" name="age" id="age" placeholder="Введите число">
+							</fieldset>
+							<fieldset class="form-input-container form-input-container">
+								<div class="subscription-dropdown">
+									<p class="subscription-dropdown-label">Вид абонемента</p>
+									<div class="subscription-dropdown-select" data-selected="">
+										<div class="subscription-dropdown-selected placeholder">Выберите абонемент</div>
+										<ul class="subscription-dropdown-list">
+											<li data-value="1">№1 Первые шаги</li>
+											<li data-value="2">№2 Гончарный мастер</li>
+											<li data-value="3">№3 Художник по керамике</li>
+										</ul>
+									</div>
 								</div>
-							</div>
+							</fieldset>
 						</fieldset>
 						<fieldset class="form-input-container form-input-comment">
 							<label for="comment">Комментарий</label>
