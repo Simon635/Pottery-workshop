@@ -73,7 +73,7 @@ html {
 
 body {
 	width: 100%;
-	min-width: 700px;
+	min-width: 768px;
 	margin: 0 auto;
 	padding: 0;
 	font-family: "Century Gothic", sans-serif;
