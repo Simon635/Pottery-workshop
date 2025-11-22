@@ -102,6 +102,8 @@ body {
 	color: #961717;
 }
 
+/* CHILD STYLE */
+
 .main-header {
 	width: 100%;
 	background-color: #961717;
@@ -886,3 +888,69 @@ body {
 	color: #ffffff;
 }
 
+
+/* INDEX STYLE */
+
+.hero-main {
+	width: 100%;
+}
+
+.hero-main-section {
+	max-width: 1920px;
+	min-width: 768px;
+	margin: 0 auto;
+	padding: 0 40px;
+	padding-top: 199px;
+	padding-bottom: 341px;
+	box-sizing: border-box;
+	background-image: url("../img/main-hero-img.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.hero-main-container {
+	max-width: 555px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+
+.hero-main-img {
+	max-width: 1920px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.hero-main-title {
+	margin: 0 auto;
+	padding: 0;
+	font-size: 46px;
+	font-weight: 700;
+}
+
+.hero-main-logo {
+	max-width: 555px;
+}
+
+.hero-main-text {
+	margin: 0;
+	padding: 0;
+	font-size: 22px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.hero-main-link {
+	display: block;
+	width: 359px;
+	padding: 12px 50px;
+	box-sizing: border-box;
+	font-size: 21px;
+	font-weight: 700;
+	border-radius: 30px;
+	border: 3px solid #ffffff;
+	text-decoration: none;
+}

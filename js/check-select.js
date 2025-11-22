@@ -15,7 +15,6 @@ document.querySelectorAll('.subscription-dropdown-select').forEach(dropdown => {
 		});
 	});
 
-	// Закрытие при клике вне dropdown
 	document.addEventListener('click', (e) => {
 		if (!dropdown.contains(e.target)) {
 			dropdown.classList.remove('active');
