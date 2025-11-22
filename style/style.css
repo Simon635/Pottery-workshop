@@ -953,6 +953,7 @@ body {
 	border-radius: 30px;
 	border: 3px solid #ffffff;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .description {
@@ -963,7 +964,6 @@ body {
 	max-width: 1360px;
 	margin: 0 auto;
 	padding: 60px 40px;
-	box-sizing: border-box;
 }
 
 .description-title {
@@ -994,4 +994,94 @@ body {
 	min-width: 400px;
 	width: 100%;
 	object-fit: contain;
+}
+
+.gifts {
+	width: 100%;
+	background-color: #961717;
+}
+
+.gifts-container {
+	max-width: 1360px;
+	padding: 60px 40px;
+	margin: 0 auto;
+}
+
+.gifts-title {
+	color: #ffffff;
+}
+
+.gifts-list {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(440px, auto));
+	gap: 20px;
+	justify-content: center;
+}
+
+.gifts-item {
+	max-width: 440px;
+	display: grid;
+	grid-template-columns: auto;
+	gap: 30px;
+}
+
+.gifts-item p {
+	font-size: 22px; 
+	font-weight: 400;
+}
+
+.gifts-item a {
+	display: block;
+	width: 100%;
+	padding: 12px 50px;
+	box-sizing: border-box;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 30px;
+	border: 3px solid #FFF;
+	text-decoration: none;
+}
+
+.gifts-img {
+	border-radius: 30px;
+}
+
+.gifts-item-title {
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.gallary-container {
+	max-width: 1360px;
+	margin: 0 auto;
+	padding: 60px 40px;
+}
+
+.gallary-title {
+	max-width: 1000px;
+}
+
+.gallary-list {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(325px, auto));
+	justify-content: center;
+	gap: 20px;
+	list-style-type: none;
+}
+
+.gallary-item {
+	max-width: 325px;
+}
+
+.gallary-img {
+	max-width: 325px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 30px;
 }
