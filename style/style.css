@@ -954,3 +954,44 @@ body {
 	border: 3px solid #ffffff;
 	text-decoration: none;
 }
+
+.description {
+	width: 100%;
+}
+
+.description-container {
+	max-width: 1360px;
+	margin: 0 auto;
+	padding: 60px 40px;
+	box-sizing: border-box;
+}
+
+.description-title {
+	margin-bottom: 40px;
+}
+
+.description-text-container {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 20px;
+	align-items: center;
+}
+
+.description-text {
+	max-width: 555px;
+	font-size: 22px;
+	font-weight: 400;
+	color: #000000;
+}
+
+.description-text span {
+	display: block;
+	margin-bottom: 25px;
+}
+
+.description-img {
+	max-width: 785px;
+	min-width: 400px;
+	width: 100%;
+	object-fit: contain;
+}
