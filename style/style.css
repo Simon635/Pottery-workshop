@@ -1407,14 +1407,11 @@ body {
 }
 
 .payment-form-input-container {
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
 	gap: 20px;
 	justify-content: space-between;
-}
-
-.payment-field {
 }
 
 .payment-number-container {
@@ -1553,4 +1550,102 @@ body {
 
 .toggle-input:checked + .toggle-slider::before {
   transform: translateX(26px);
+}
+
+.modal-pay {
+	display: none;
+}
+
+.modal-pay.open {
+	display: block;
+}
+
+.modal-pay-container { 
+	position: fixed;      
+  top: 50%;             
+  left: 50%;             
+  transform: translate(-50%, -50%);
+	width: 550px; 
+  padding: 40px 50px;
+	background: #961717;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+	border-radius: 30px;
+  z-index: 1000;
+}
+
+.modal-pay-title-container {
+	position: relative;
+	width: 100%;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	font-size: 22px;
+	font-weight: 700;
+	text-align: center;
+	color: #ffffff;
+}
+
+.modal-pay-form {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.modal-pay-title {
+	margin-bottom: 4px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.modal-pay-input {
+	padding: 10px 20px;
+	border-radius: 30px;
+	border: 2px solid #ffffff;
+	box-sizing: border-box;
+}
+
+.modal-pay-title-container::after {
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	content: "";
+	width: 370px;
+	height: 2px;
+	background-color: #ffffff;
+}
+
+.modal-pay-title-text {
+	margin-bottom: 40px;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	color: #ffffff;
+}
+
+.modal-pay-button {
+	display: block;
+	margin: 0 auto;
+	padding: 12px 50px;
+	font-size: 21px;
+	font-weight: 700;
+	color: #ffffff;
+	border-radius: 30px;
+	border: 3px solid #ffffff;
+	background-color: rgba(0, 0, 0, 0);
+	cursor: pointer;
+}
+
+.modal-pay-overlay {
+	position: fixed; 
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 999;
 }
