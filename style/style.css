@@ -1151,11 +1151,9 @@ body {
 
 /* Корзина */
 
-.cards-favourite {
-}
-
 .cards-favourite-container {
-	max-width: 1360px;
+	max-width: 1440px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 60px 40px;
 }
@@ -1175,6 +1173,7 @@ body {
 
 .cards-favourite-info-container {
 	max-width: 670px;
+	width: 100%;
 }
 
 .card-favourite-button-prev {
@@ -1206,7 +1205,8 @@ body {
 }
 
 .cards-favourite-item {
-	padding-bottom: 45px;
+	display: block;
+	padding-bottom: 55px;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
 	gap: 20px;
@@ -1255,6 +1255,14 @@ body {
 	background: #fff;
 }
 
+.cards-favourite-button-num:hover {
+	opacity: 0.3;
+}
+
+.cards-favourite-button-num:active {
+	opacity: 0.6;
+}
+
 .cards-favourite-button-up::before {
 	content: '';
 	position: absolute;
@@ -1279,7 +1287,7 @@ body {
 }
 
 .cards-favourite-button-up {
-	right: 0px;
+	right: 5px;
 }
 
 .cards-favourite-button-down {
@@ -1302,11 +1310,58 @@ body {
 }
 
 .cards-favourite-price {
-	grid-column: 3/4;
+	grid-column: 3 / 4;
 	grid-row: 2 / 3;
 	font-size: 24px;
 	font-weight: 400;
 	color: #000000;
+}
+
+.cards-button-delete {
+	grid-column: 4 / 5;
+	grid-row: 2 / 3;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #898989;
+	border-radius: 50%;
+	background: transparent;
+	cursor: pointer;
+	transition: 0.2s;
+	justify-self: end;
+}
+
+/* линии крестика */
+.cards-button-delete::before,
+.cards-button-delete::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 22px;
+	height: 2px;
+	background-color: #898989;
+	transform-origin: center;
+}
+
+/* первая линия */
+.cards-button-delete::before {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* вторая линия */
+.cards-button-delete::after {
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* hover эффект */
+.cards-button-delete:hover {
+	border-color: #000;
+}
+
+.cards-button-delete:hover::before,
+.cards-button-delete:hover::after {
+	background-color: #000;
 }
 
 .container {
@@ -1329,6 +1384,7 @@ body {
 	margin-bottom: 23px;
 	padding: 44px 32px;
 	padding-bottom: 16px;
+	box-sizing: border-box;
 	background-color: #961717;
 	border-radius: 30px;
 }
@@ -1345,7 +1401,7 @@ body {
 }
 
 .payment-form {
-	padding: 0;
+	padding: 0 !important;
 	border: none;
 	border: none !important;
 }
@@ -1354,7 +1410,7 @@ body {
 	margin-bottom: 25px;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-	gap: 23px;
+	gap: 20px;
 	justify-content: space-between;
 }
 
@@ -1362,6 +1418,7 @@ body {
 }
 
 .payment-number-container {
+	width: 100%;
 	grid-column: 1 / 3;
 	grid-row: 1 / 2;
 }
@@ -1379,6 +1436,7 @@ body {
 	width: 100%;
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
+	justify-self: end;
 }
 
 .payment-data-input {
@@ -1393,7 +1451,6 @@ body {
 }
 
 .payment-number {
-	max-width: 470px;
 	width: 100%;
 }
 
