@@ -1409,7 +1409,7 @@ body {
 
 .payment-btn {
 	display: block;
-	width: 167px;
+	width: 167px !important;
 	margin: 0 auto;
 	margin-bottom: 24px;
 	padding: 10px 22px;
@@ -1420,12 +1420,18 @@ body {
 	border-radius: 30px;
 	border: none;
 	background-color: #ffffff;
+	border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.payment-btn:hover {
+	background-color: #ffffff;
+	color: #BABABA;
 }
 
 .payment-btn:active {
-	background-color: #ffffff;
-	border: 0px solid #961717;
-	color: #961717;
+	border: none;
+	background-color: #961717;
+	border: 2px solid #ffffff;
 }
 
 .payment-text {
